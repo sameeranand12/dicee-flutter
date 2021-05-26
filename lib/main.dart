@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'dart:math';
 void main() {
   return runApp(
     MaterialApp(
@@ -25,6 +25,7 @@ class DicePage extends StatefulWidget {
 
 class _DicePageState extends State<DicePage> {
   int leftDiceNumber = 1;
+  int rightDiceNumber = 1;
 
   @override
 
@@ -39,7 +40,7 @@ class _DicePageState extends State<DicePage> {
             child: TextButton(
               onPressed:() {
                 setState(() {
-                  leftDiceNumber =4;
+                  leftDiceNumber = Random().nextInt(6) +1 ;// it will give num from 0 to max -1 sp we add +1
                   print('dice number = $leftDiceNumber');
                 });
               },
