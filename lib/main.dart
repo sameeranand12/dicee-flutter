@@ -32,7 +32,7 @@ void changeDiceFace(){
     leftDiceNumber = Random().nextInt(6) + 1;
 
   });// it will give num from 0 to max -1 sp we add +1
-}
+}//sidhasufh
   @override
   Widget build(BuildContext context) {
     return Center(
