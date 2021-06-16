@@ -30,7 +30,7 @@ void changeDiceFace(){
   setState(() {
     rightDiceNumber = Random().nextInt(6) + 1;
     leftDiceNumber = Random().nextInt(6) + 1;
-
+//wasted
   });// it will give num from 0 to max -1 sp we add +1
 }//sidhasufh//dss
   @override
